@@ -1,0 +1,604 @@
+body {
+    background: url(http://abali.ru/wp-content/uploads/2013/05/goluboy_fon-600x375.jpg) no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 120%;
+    /* Современные браузеры */
+}
+
+#slides {
+    position: relative;
+    height: 150px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide {
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1) {
+    background: url(https://way2day.com/wp-content/uploads/2017/12/Doktor-Strendzh.jpg);
+    width: 700px;
+    height: 200px;
+}
+
+.slide:nth-of-type(2) {
+    background: url(https://way2day.com/wp-content/uploads/2018/07/CHelovek-pauk-Vozvrashhenie-domoj.jpg);
+    width: 700px;
+    height: 200px;
+}
+
+.slide:nth-of-type(3) {
+    background: url(https://way2day.com/wp-content/uploads/2018/07/Novyj-CHelovek-pauk.jpg);
+    width: 700px;
+    height: 200px;
+}
+
+.slide:nth-of-type(4) {
+    background: url(https://way2day.com/wp-content/uploads/2017/12/Tor-tsarstvo-tmy.jpg);
+    width: 700px;
+    height: 200px;
+}
+
+.slide:nth-of-type(5) {
+    background: url(https://way2day.com/wp-content/uploads/2018/07/Rosomaha-Bessmertnyj.jpg);
+    width: 700px;
+    height: 200px;
+}
+
+body {
+    display: inline;
+}
+
+.container {
+    width: 200px;
+    height: 95px;
+    margin-left: 750px;
+    margin-top: 0px;
+    position: absolute;
+    top: 0;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: 95px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+iframe {
+    margin-left: 980px;
+    position: absolute;
+    top: 18px;
+}
+
+ul.topnav {
+    position: absolute;
+    margin-left: 0px;
+    list-style-type: none;
+    margin-top: 65px;
+    padding: 0;
+    background-color: #87CEFA;
+    overflow: hidden;
+    text-align: center;
+}
+
+ul.topnav li {
+    float: left;
+    width: 230px;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {
+    background-color: #4682B4;
+    width: 200px;
+}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+.vertical-menu {
+    width: 200px;
+    /* Set a width if you like */
+    height: 220px;
+    overflow-y: auto;
+    margin-left: 1070px;
+    position: absolute;
+    top: 260px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    /* Grey background color */
+    color: black;
+    /* Black text color */
+    display: block;
+    /* Make the links appear below each other */
+    padding: 12px;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #4682B4;
+    /* Dark blue background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #87CEFA;
+    /* Add a blue color to the "active/current" link */
+    color: white;
+}
+
+.scarlet {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: 170px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.press {
+    vertical-align: middle;
+    margin-left: 122px;
+    margin-top: 270px;
+    position: absolute;
+    width: 920px;
+}
+
+.blank {
+    width: 300px;
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 167px;
+}
+
+.calendar {
+    width: 450px;
+    heigth: 100px;
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 150px;
+    ul {
+        list-style-type: none;
+    }
+    body {
+        font-family: Verdana, sans-serif;
+    }
+    /* Month header */
+    .month {
+        padding: 25px 25px;
+        width: 100%;
+        background: #1abc9c;
+        text-align: center;
+    }
+    /* Month list */
+    .month ul {
+        margin: 0;
+        padding: 0;
+    }
+    .month ul li {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    /* Previous button inside month header */
+    .month .prev {
+        float: left;
+        padding-top: 10px;
+    }
+    /* Next button */
+    .month .next {
+        float: right;
+        padding-top: 10px;
+    }
+    /* Weekdays (Mon-Sun) */
+    .weekdays {
+        width: 450px;
+        heigth: 50px;
+        position: absolute;
+        margin-left: 550px;
+        margin-top: 15px;
+        margin: 0;
+        padding: 10px 0;
+        background-color: #ddd;
+    }
+    .weekdays li {
+        display: inline-block;
+        width: 13.6%;
+        color: #666;
+        text-align: center;
+    }
+    /* Days (1-31) */
+    .days {
+        padding: 10px 0;
+        background: #eee;
+        margin: 0;
+        width: 450px;
+        padding-top: 40px;
+        position: absolute;
+    }
+    .days li {
+        list-style-type: none;
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: #777;
+    }
+    *,
+    *:before,
+    *:after {
+        transition: .25s ease-in-out;
+    }
+    $green:rgba(19, 191, 17, 1);
+    $blue:#1fc1c8;
+    bodyswitch {
+        margin-left: 200px;
+        font-family: helvetica neue, helvetica, arial, sans-serif;
+        font-size: 14px;
+        font-weight: 200;
+        padding: 50px;
+    }
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        padding: 0 0 25px 0;
+        color: #606060;
+    }
+    .checkbox-label {
+        display: block;
+        background: #f3f3f3;
+        height: 50px;
+        width: 80px;
+        border-radius: 50px;
+        margin: 50px auto;
+        position: relative;
+        box-shadow: 0 0 0 2px #dddddd;
+        margin-left: 590px;
+        margin-top: 0px;
+        .on {
+            display: block;
+            position: absolute;
+            z-index: 0;
+            left: 0;
+            opacity: 1;
+            min-width: 300px;
+            line-height: 50px;
+            opacity: 0;
+            color: $green;
+        }
+        .off {
+            display: block;
+            position: absolute;
+            z-index: 0;
+            right: 100px;
+            text-align: right;
+            opacity: 1;
+            min-width: 300px;
+            line-height: 50px;
+            opacity: 1;
+            color: #bbbbbb;
+        }
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+            background: white;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, .2), 0 0 0 2px #dddddd;
+        }
+    }
+    .checkbox {
+        position: absolute;
+        left: -5000px;
+        &:checked {
+            +.checkbox-label {
+                background: $green;
+                box-shadow: 0 0 0 2px $green;
+                .on {
+                    left: 100px;
+                    opacity: 1;
+                }
+                .off {
+                    right: 0px;
+                    opacity: 0;
+                }
+                &:before {
+                    left: 30px;
+                    box-shadow: 0 3px 3px rgba(0, 0, 0, .2), 0 0 0 2px $green;
+                }
+            }
+        }
+    }
+    .checkbox.blue {
+        position: absolute;
+        left: -5000px;
+        +.checkbox-label {
+            .on {
+                color: $blue;
+            }
+        }
+        &:checked {
+            +.checkbox-label {
+                background: $blue;
+                box-shadow: 0 0 0 2px $blue;
+                .on {
+                    left: 100px;
+                    opacity: 1;
+                }
+                .off {
+                    right: 0px;
+                    opacity: 0;
+                }
+                &:before {
+                    left: 30px;
+                    box-shadow: 0 3px 3px rgba(0, 0, 0, .2), 0 0 0 2px $blue;
+                }
+            }
+        }
+    }
+    /* Highlight the "current" day */
+    .days li .active {
+        padding: 5px;
+        background: #1abc9c;
+        color: white !important
+    }
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    margin-left: -500px;
+    margin-top: -160px;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+
+/*style the arrow inside the select element:*/
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+/*point the arrow upwards when the select box is open (active):*/
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+
+/*style the items (options), including the selected item:*/
+
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+
+/*style items (options):*/
+
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
+/*hide the items when the select box is closed:*/
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.omg {
+    width: 450px;
+    padding-top: 40px;
+    position: absolute;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    margin-left: -230px;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+}
+
+.alert.info {
+    background-color: #2196F3;
+}
+
+.alert.warning {
+    background-color: #ff9800;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style the input container */
+
+.input-container {
+    display: flex;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-left: 490px;
+    margin-top: -100px;
+}
+
+
+/* Style the form icons */
+
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+
+/* Style the input fields */
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+
+/* Set a style for the submit button */
+
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-left: 490px;
+    margin-top: 100px;
+    opacity: 0.9;
+    position: absolute;
+}
+
+.btn:hover {
+    opacity: 1;
+}

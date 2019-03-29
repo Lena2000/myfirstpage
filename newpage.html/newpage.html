@@ -1,0 +1,342 @@
+<html>
+
+<head>
+    <title>Документ без названия</title>
+
+
+    <body>
+
+
+        <div class="film">
+            <ul id="slides">
+                <li class="slide ">Film1</li>
+                <li class="slide">Film2</li>
+                <li class="slide showing">Film3</li>
+                <li class="slide">Film4</li>
+                <li class="slide">Film5</li>
+            </ul>
+            <script>
+                var slides = document.querySelectorAll('#slides .slide');
+                var currentSlide = 0;
+                var slideInterval = setInterval(nextSlide, 2000);
+
+                function nextSlide() {
+                    slides[currentSlide].className = 'slide';
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].className = 'slide showing';
+                }
+            </script>
+
+            <div class="container">
+
+                <div class="item">
+                    <p>
+                        <a href="https://uk-ua.facebook.com/"><img src="https://cdn.icon-icons.com/icons2/201/PNG/512/facebook_512_24369.png" width="75" height="75" alt="https://uk-ua.facebook.com/"></a>
+                    </p>
+                </div>
+                <div class="item">
+                    <p>
+                        <a href="https://twitter.com/?lang=ru"><img src="https://st.depositphotos.com/1144386/4344/v/950/depositphotos_43444317-stock-illustration-original-twitter-bird-icon.jpg" width="75" height="75" alt="https://twitter.com/?lang=ru"></a>
+                    </p>
+                </div>
+                <div class="item">
+                    <p>
+                        <a href="https://plus.google.com/discover"><img src="https://cdn.icon-icons.com/icons2/201/PNG/512/google-plus_512_24362.png" width="75" height="75" alt="https://plus.google.com/discover"></a>
+                    </p>
+                </div>
+                <div class="item">
+                    <p>
+                        <a href="https://www.youtube.com/"><img src="https://seeklogo.com/images/Y/youtube-square-logo-3F9D037665-seeklogo.com.png" width="75" height="75" alt="https://www.youtube.com/"></a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/WxPAiIpuVvM?feature=player_embedded&cc_load_policy=1&disablekb=1&enablejsapi=1&fs=1&modestbranding=1&autohide=0&color=white&iv_load_policy=3&theme=light" frameborder="0" allowfullscreen></iframe>
+
+
+
+        <link rel="stylesheet" href="style.css">
+        <ul class="topnav" id="myTopnav">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+            <li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="myFunction()">&#9776</a></li>
+        </ul>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className == "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+
+        <div class="vertical-menu">
+            <a href="#" class="active">Web Design</a>
+            <a href="#">Ecommerce</a>
+            <a href="#">Blogs</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Print Design</a>
+            <a href="#">Photography</a>
+        </div>
+
+
+
+        <img src="https://static.kulturologia.ru/files/u18476/184768660.jpg" alt="Scarlet" class="scarlet" border: 2px solid black>
+
+
+        <div class="press">
+            <form action="/action_page.php">
+                <button type="submit">Follow</button>
+            </form>
+        </div>
+
+
+
+        <!-- weather widget start -->
+        <a class="blank" href="https://nochi.com/weather/odessa-7764"><img src="https://w.bookcdn.com/weather/picture/32_7764_1_20_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=604&anc_id=13496" alt="booked.net" /></a>
+        <!-- weather widget end -->
+
+        <div class="calendar">
+            <div class="month">
+                <ul>
+                    <li class="prev">&#10094;</li>
+                    <li class="next">&#10095;</li>
+                    <li>March<br><span style="font-size:18px">2019</span></li>
+                </ul>
+            </div>
+
+            <ul class="weekdays">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Su</li>
+            </ul>
+
+            <ul class="days">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li><span class="active">29</span></li>
+                <li>30</li>
+                <li>31</li>
+            </ul>
+
+
+
+
+
+            <h1>Toggles with Labels - v2</h1>
+
+            <input class="checkbox" id="checkbox1" type="checkbox" />
+            <label for="checkbox1" class="checkbox-label">
+  <span class="on">Switch ON</span>
+  <span class="off">Switch OFF</span>
+</label>
+
+            <input class="checkbox blue" id="checkbox2" type="checkbox" />
+            <label for="checkbox2" class="checkbox-label">
+  <span class="on">Switch OFF</span>
+  <span class="off">Switch ON</span>
+</label>
+
+
+
+
+            <div class="custom-select" style="width:200px;">
+                <select>
+    <option value="0">Dropdown normal:</option>
+    <option value="1">Option one</option>
+    <option value="2">Option two</option>
+    <option value="3">Option three</option>
+    <option value="4">Option four</option>
+    <option value="5">Option five</option>
+    <option value="6">Option six</option>
+    <option value="7">Option seven</option>
+    <option value="8">Option eight</option>
+    <option value="9">Option nine</option>
+  </select>
+                <script>
+                    var x, i, j, selElmnt, a, b, c;
+                    /*look for any elements with the class "custom-select":*/
+                    x = document.getElementsByClassName("custom-select");
+                    for (i = 0; i < x.length; i++) {
+                        selElmnt = x[i].getElementsByTagName("select")[0];
+                        /*for each element, create a new DIV that will act as the selected item:*/
+                        a = document.createElement("DIV");
+                        a.setAttribute("class", "select-selected");
+                        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                        x[i].appendChild(a);
+                        /*for each element, create a new DIV that will contain the option list:*/
+                        b = document.createElement("DIV");
+                        b.setAttribute("class", "select-items select-hide");
+                        for (j = 1; j < selElmnt.length; j++) {
+                            /*for each option in the original select element,
+                            create a new DIV that will act as an option item:*/
+                            c = document.createElement("DIV");
+                            c.innerHTML = selElmnt.options[j].innerHTML;
+                            c.addEventListener("click", function(e) {
+                                /*when an item is clicked, update the original select box,
+                                and the selected item:*/
+                                var y, i, k, s, h;
+                                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                                h = this.parentNode.previousSibling;
+                                for (i = 0; i < s.length; i++) {
+                                    if (s.options[i].innerHTML == this.innerHTML) {
+                                        s.selectedIndex = i;
+                                        h.innerHTML = this.innerHTML;
+                                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                                        for (k = 0; k < y.length; k++) {
+                                            y[k].removeAttribute("class");
+                                        }
+                                        this.setAttribute("class", "same-as-selected");
+                                        break;
+                                    }
+                                }
+                                h.click();
+                            });
+                            b.appendChild(c);
+                        }
+                        x[i].appendChild(b);
+                        a.addEventListener("click", function(e) {
+                            /*when the select box is clicked, close any other select boxes,
+                            and open/close the current select box:*/
+                            e.stopPropagation();
+                            closeAllSelect(this);
+                            this.nextSibling.classList.toggle("select-hide");
+                            this.classList.toggle("select-arrow-active");
+                        });
+                    }
+
+                    function closeAllSelect(elmnt) {
+                        /*a function that will close all select boxes in the document,
+                        except the current select box:*/
+                        var x, y, i, arrNo = [];
+                        x = document.getElementsByClassName("select-items");
+                        y = document.getElementsByClassName("select-selected");
+                        for (i = 0; i < y.length; i++) {
+                            if (elmnt == y[i]) {
+                                arrNo.push(i)
+                            } else {
+                                y[i].classList.remove("select-arrow-active");
+                            }
+                        }
+                        for (i = 0; i < x.length; i++) {
+                            if (arrNo.indexOf(i)) {
+                                x[i].classList.add("select-hide");
+                            }
+                        }
+                    }
+                    /*if the user clicks anywhere outside the select box,
+                    then close all select boxes:*/
+                    document.addEventListener("click", closeAllSelect);
+                </script>
+            </div>
+
+
+
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+            <div class="omg">
+                <div class="alert">
+                    <span class="closebtn">×</span>
+                    <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                </div>
+
+                <div class="alert success">
+                    <span class="closebtn">×</span>
+                    <strong>Success!</strong> Indicates a successful or positive action.
+                </div>
+
+                <div class="alert info">
+                    <span class="closebtn">×</span>
+                    <strong>Info!</strong> Indicates a neutral informative change or action.
+                </div>
+
+                <div class="alert warning">
+                    <span class="closebtn">×</span>
+                    <strong>Warning!</strong> Indicates a warning that might need attention.
+                </div>
+
+                <script>
+                    var close = document.getElementsByClassName("closebtn");
+                    var i;
+
+                    for (i = 0; i < close.length; i++) {
+                        close[i].onclick = function() {
+                            var div = this.parentElement;
+                            div.style.opacity = "0";
+                            setTimeout(function() {
+                                div.style.display = "none";
+                            }, 600);
+                        }
+                    }
+                </script>
+
+
+                <form action="/action_page.php">
+
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="text" placeholder="Email" name="email">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-key icon"></i>
+                        <input class="input-field" type="password" placeholder="Password" name="psw">
+                    </div>
+
+                    <button type="submit" class="btn">Register</button>
+                </form>
+
+
+
+
+
+
+    </body>
+
+</html>
